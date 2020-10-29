@@ -1,0 +1,77 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\Digitalent\digitalent-be-21-master>node
+Welcome to Node.js v12.19.0.
+Type ".help" for more information.        
+> cons arr = [1,2,3,4];
+cons arr = [1,2,3,4];
+     ^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> const arr = [1,2,3,4];
+undefined
+> const arr2 = arr.map(item => item * 2);
+undefined
+> console.l
+undefined
+> console.log(arr2)
+[ 2, 4, 6, 8 ]
+undefined
+> const arr3 = [1,2,3,4,5,6,7,8];
+undefined
+> const arrEven = arr3.filter(itme => item % 2 === 0);
+Uncaught ReferenceError: item is not defined
+    at repl:1:46
+    at Array.filter (<anonymous>)
+> const arrEven = arr3.filter(item => item % 2 === 0);
+Uncaught SyntaxError: Identifier 'arrEven' has already been declared
+> const arrEvent = arr3.filter(item => item % 2 === 0);
+undefined
+> console
+{
+  log: [Function: log],
+  warn: [Function: warn],
+  dir: [Function: dir],
+  time: [Function: time],
+  timeEnd: [Function: timeEnd],
+  timeLog: [Function: timeLog],
+  trace: [Function: trace],
+  assert: [Function: assert],
+  clear: [Function: clear],
+  count: [Function: count],
+  countReset: [Function: countReset],     
+  group: [Function: group],
+  groupEnd: [Function: groupEnd],
+  table: [Function: table],
+  debug: [Function: debug],
+  info: [Function: info],
+  dirxml: [Function: dirxml],
+  error: [Function: error],
+  groupCollapsed: [Function: groupCollapsed],
+  Console: [Function: Console],
+  profile: [Function: profile],
+  profileEnd: [Function: profileEnd],     
+  timeStamp: [Function: timeStamp],       
+  context: [Function: context]
+}
+> console.log(arrEven);
+Uncaught ReferenceError: arrEven is not defined
+> console.log(arrEvent);
+[ 2, 4, 6, 8 ]
+undefined
+> const sum = arr3.reduce((acc, item) => acc + item, 0);
+undefined
+> console.log(sum);
+36
+undefined
+> const arr4 = [1,2,3,4,5,6,7,8,9,10]     
+undefined
+> const jumlah = arr4.map(item => item * 3).filter(item => item % 2 !== 0).reduce((acc, item) => acc + item, 0);
+undefined
+> console.log(jumlah);
+75
+undefined
+>
